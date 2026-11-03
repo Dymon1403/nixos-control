@@ -8,12 +8,9 @@
       user = {
         name  = "Dymon1403";
         email = "ne cmotri";
-      };  
-
-      extraConfig = {
-        credential.helper = "store";
       };
-
+        
+        url."git@github.com:".insteadOf = "https://github.com/";
       
       
       init.defaultBranch = "main";
