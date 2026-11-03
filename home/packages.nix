@@ -30,7 +30,6 @@
     curl
     wget
     unzip
-    gh
     tailscale
     localsend
 
@@ -39,7 +38,6 @@
     # ============================================
 
     mpv
-    ncmpcpp
     cava
     ffmpeg
 
