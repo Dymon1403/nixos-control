@@ -7,8 +7,15 @@
     settings = {
       user = {
         name  = "Dymon1403";
-        email = "dymaroxer1403@gmail.com";
+        email = "ne cmotri";
+      };  
+
+      extraConfig = {
+        credential.helper = "store";
       };
+
+      
+      
       init.defaultBranch = "main";
     };
   };
