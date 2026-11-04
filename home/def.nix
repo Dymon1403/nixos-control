@@ -7,6 +7,7 @@
     ./nvim.nix
     ./git.nix
     ./dunst.nix
+    ./shell.nix
 
   ];
 
