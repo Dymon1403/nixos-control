@@ -32,6 +32,7 @@
     unzip
     tailscale
     localsend
+    obs-studio
 
     # ============================================
     # Media

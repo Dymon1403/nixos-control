@@ -7,7 +7,7 @@
     settings = {
       user = {
         name  = "Dymon1403";
-        email = "ne cmotri";
+        email = "dymaroxer1403@gmail.com";
       };
         
         url."git@github.com:".insteadOf = "https://github.com/";
