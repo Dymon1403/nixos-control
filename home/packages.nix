@@ -11,7 +11,6 @@
     awww
     waypaper
     rofi
-    alacritty
     bibata-cursors
     pywal16
     grim
@@ -22,7 +21,6 @@
     # System / CLI
     # ============================================
 
-    fastfetch
     btop
     tree
     fd
