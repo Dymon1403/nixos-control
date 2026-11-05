@@ -44,11 +44,16 @@
     "XTerm*renderFont" = false;
     "XTerm*internalBorder" = 4;
     "XTerm*faceName" = "xft:cozette:pixelsize=18:antialias=false";
-  };
+    "XTerm.vt100.translations" = "#override\n\
+      Ctrl Shift <Key>C: copy-selection(CLIPBOARD)\n\
+      Ctrl Shift <Key>V: insert-selection(CLIPBOARD)";
 
-  xsession.initExtra = ''
-    ${pkgs.xorg.xrdb}/bin/xrdb -merge ~/.Xresources
-  '';
+  };
+  
+   wayland.windowManager.hyprland.settings.exec-once = [
+    "xrdb -merge ~/.Xresources"
+  ];
+
 
 
 }
