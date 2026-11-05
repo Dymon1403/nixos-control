@@ -40,7 +40,7 @@
   };
 
   xresources.properties = {
-    "XTerm*font" = "9x15";
+    "XTerm*font" = "10x20";
     "XTerm*renderFont" = false;
     "XTerm*internalBorder" = 4;
     "XTerm*faceName" = "xft:Monospace:pixelsize=18:antialias=false";

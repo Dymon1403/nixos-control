@@ -189,6 +189,7 @@
     monospace = [ "JetBrainsMono Nerd Font" ];
   };
 
+
   # ============================================
   # Sound
   # ============================================
@@ -256,8 +257,11 @@
     material-design-icons
     font-awesome
     nerd-fonts.jetbrains-mono
+    xorg.fontmiscmisc
   ];
-  
+
+  fonts.fontconfig.allowBitmaps = true;
+
   # ============================================
   # Fonts
   # ============================================
