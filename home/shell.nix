@@ -39,4 +39,13 @@
     enableBashIntegration = true;
   };
 
+  xresources.properties = {
+    "XTerm*font" = "6x13";
+
+    "XTerm*renderFont" = false; 
+    
+    "XTerm*internalBorder" = 4;
+  };
+
+
 }
