@@ -257,7 +257,7 @@
     material-design-icons
     font-awesome
     nerd-fonts.jetbrains-mono
-    xorg.fontmiscmisc
+    cozette
   ];
 
   fonts.fontconfig.allowBitmaps = true;
