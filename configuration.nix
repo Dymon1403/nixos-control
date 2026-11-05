@@ -101,6 +101,9 @@
     options = "grp:caps_toggle,caps:shift_capslock";
   };
 
+  services.xserver.enable = true;
+  services.xserver.windowManager.dwm.enable = true;
+
   # ============================================
   # User
   # ============================================
