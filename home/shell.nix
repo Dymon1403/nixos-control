@@ -40,12 +40,15 @@
   };
 
   xresources.properties = {
-    "XTerm*font" = "6x13";
-
-    "XTerm*renderFont" = false; 
-    
+    "XTerm*font" = "9x15";
+    "XTerm*renderFont" = false;
     "XTerm*internalBorder" = 4;
+    "XTerm*faceName" = "xft:Monospace:pixelsize=18:antialias=false";
   };
+
+  xsession.initExtra = ''
+    ${pkgs.xorg.xrdb}/bin/xrdb -merge ~/.Xresources
+  '';
 
 
 }
