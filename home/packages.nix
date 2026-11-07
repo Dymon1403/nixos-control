@@ -16,6 +16,7 @@
     grim
     slurp
     wl-clipboard
+    zathura 
 
     # ============================================
     # System / CLI
