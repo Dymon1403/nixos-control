@@ -67,6 +67,7 @@
             ff = "fastfetch";
             cm = "cmus";
             home = "ssh server@192.168.0.228";
+            dop = "ssh server@192.168.0.109";
             nn = "nvim ~/dot/configuration.nix";
             zap = "./zapret.sh";
             ss = "sudo nixos-rebuild switch --flake .#thinkpad";
