@@ -186,9 +186,8 @@
   # --------------------------------------------
  
   fonts.fontconfig.defaultFonts = {
-    cozette = [ "cozette" ];
+    monospace = ["Cozette"];
   };
-
 
   # ============================================
   # Sound

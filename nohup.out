@@ -4,3 +4,5 @@
 [2026-11-07 20:07:26.916] [info] Loading persistent workspaces from Hyprland workspace rules
 Plugged
 [2026-11-07 20:07:27.064] [info] Bar configured (width: 1900, height: 40) for output: eDP-1
+Gdk-Message: 20:09:47.592: Unable to load hand2 from the cursor theme
+Gdk-Message: 20:09:47.607: Unable to load arrow from the cursor theme
