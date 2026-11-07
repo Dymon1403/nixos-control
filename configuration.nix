@@ -272,7 +272,7 @@
   # ============================================
 
   services.zapret = {
-    enable = false;
+    enable = true;
     #whitelist = [
      # "rutracker.org"
      #  "youtube.com"
