@@ -73,7 +73,7 @@
 
     style = ''
       * {
-          font-family: "JetBrainsMono Nerd Font", "Roboto", "Helvetica", "sans-serif";
+          font-family: "cozette";
           font-size: 12px;
           border: none;
           border-radius: 5px;
@@ -85,7 +85,7 @@
       }
 
       #mpris, #workspaces, #clock, #tray, #cpu, #memory, #temperature {
-          font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font Mono", "sans-serif";
+          font-family: "cozette";
           background: rgba(20, 20, 20, 0.7);
           color: @color7;
           border: 2px solid @color4;

@@ -186,7 +186,7 @@
   # --------------------------------------------
  
   fonts.fontconfig.defaultFonts = {
-    monospace = [ "JetBrainsMono Nerd Font" ];
+    cozette = [ "cozette" ];
   };
 
 
@@ -273,7 +273,7 @@
   # ============================================
 
   services.zapret = {
-    enable = true;
+    enable = false;
     #whitelist = [
      # "rutracker.org"
      #  "youtube.com"
@@ -288,6 +288,7 @@
        "github.com"
        "vk.ru"
        "deepseek.com"
+
 
     ];
     configureFirewall = true;
