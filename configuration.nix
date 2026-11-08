@@ -71,6 +71,8 @@
             nn = "nvim ~/dot/configuration.nix";
             zap = "./zapret.sh";
             ss = "sudo nixos-rebuild switch --flake .#thinkpad";
+            wake = "python3 wake.py";
+            sleep = "python3 sleep.py";
 
             };
 
