@@ -44,6 +44,14 @@
     # Dev / Creative
     # ============================================
 
+     (python3.withPackages (ps: with ps; [
+      openai-whisper
+      python-mpd2
+      sounddevice
+      numpy
+    ]))
+    
+
     sunvox
 
     # ============================================
