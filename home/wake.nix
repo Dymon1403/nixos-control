@@ -8,7 +8,7 @@ servers = [
 for server in servers:
     print(f"Starting {server['name']} ({server['ip']})...")
     
-    ssh_cmd = f"ssh {server['user']}@{server['ip']} 'cd {server['path']} && docker compose up -d'"
+    ssh_cmd = f"ssh {server['user']}@{server['ip']} 'cd {server['path']} && docker compose up -d && docker start tg-ws-proxy'"
     
     result = subprocess.run(ssh_cmd, shell=True, capture_output=True, text=True)
     
