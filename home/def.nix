@@ -11,6 +11,15 @@
 
   ];
 
+
+  home.packages = [
+    (pkgs.writeShellScriptBin "wake" ''
+      exec ${pkgs.python3}/bin/python3 ${../scripts/wake.py} "$@"
+    '')
+  ];
+
+
+
   home.username = "dmitrj";
   home.homeDirectory = "/home/dmitrj";
   
