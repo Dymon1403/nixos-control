@@ -70,8 +70,8 @@
             nn = "nvim ~/dot/configuration.nix";
             zap = "./zapret.sh";
             ss = "sudo nixos-rebuild switch --flake .#thinkpad$";
-            sleep = "python3 sleep.py";
-            docker = "python3 docker.py";
+            # sleep = "python3 sleep.py";
+            # docker = "python3 docker.py";
 
             };
 
