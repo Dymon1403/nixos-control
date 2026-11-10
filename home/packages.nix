@@ -49,6 +49,7 @@
       python-mpd2
       sounddevice
       numpy
+      aiogram
     ]))
     
 
