@@ -17,7 +17,6 @@
     slurp
     wl-clipboard
     zathura 
-    pnpm
   
     # ============================================
     # System / CLI
