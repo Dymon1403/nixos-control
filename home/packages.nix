@@ -17,7 +17,6 @@
     slurp
     wl-clipboard
     zathura 
-    throne
 
     # ============================================
     # System / CLI
