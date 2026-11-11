@@ -33,21 +33,5 @@
     enableBashIntegration = true;
   };
 
-  xresources.properties = {
-    "XTerm*font" = "10x20";
-    "XTerm*renderFont" = false;
-    "XTerm*internalBorder" = 4;
-    "XTerm*faceName" = "xft:cozette:pixelsize=18:antialias=false";
-    "XTerm.vt100.translations" = "#override\n\
-      Ctrl Shift <Key>C: copy-selection(CLIPBOARD)\n\
-      Ctrl Shift <Key>V: insert-selection(CLIPBOARD)";
-
-  };
-  
-   wayland.windowManager.hyprland.settings.exec-once = [
-    "xrdb -merge ~/.Xresources"
-  ];
-
-
 
 }

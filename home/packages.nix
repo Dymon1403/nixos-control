@@ -17,6 +17,7 @@
     slurp
     wl-clipboard
     zathura 
+    alacritty 
 
     # ============================================
     # System / CLI
