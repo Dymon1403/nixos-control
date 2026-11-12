@@ -29,6 +29,9 @@
     ".local/bin/docker".source = ../scripts/docker.py;
     ".local/bin/docker".executable = true;
 
+    ".local/bin/pi".source = ../scripts/ping.py;
+    ".local/bin/pi".executable = true;
+
   };
 
   stylix.targets.firefox = {
