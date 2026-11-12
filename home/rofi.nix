@@ -1,11 +1,19 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 
+
+let
+  inherit (config.lib.formats.rasi) mkLiteral;
+in
 {
+  
+  stylix.targets.rofi.enable = false;
+
+  
   programs.rofi = {
     enable = true;
     package = pkgs.rofi;
     terminal = "${pkgs.alacritty}/bin/alacritty";
-    
+
     extraConfig = {
       modi = "run,drun";
       font = "Noto Sans Mono Bold 10";
@@ -15,15 +23,16 @@
       hide-scrollbar = true;
       sidebar-mode = false;
     };
-    
+
     theme = {
       "*" = {
-        bg-col = "@base00";
-        fg-col = "@base05";
-        fg-col2 = "@base0D";
-        selected-col = "@base01";
-        border-col = "@base0D";
-        text-color = "@fg-col";
+        # Ссылки на переменные и цвета оборачиваем в mkLiteral
+        bg-col = mkLiteral "@base00";
+        fg-col = mkLiteral "@base05";
+        fg-col2 = mkLiteral "@base0D";
+        selected-col = mkLiteral "@base01";
+        border-col = mkLiteral "@base0D";
+        text-color = mkLiteral "@fg-col";
         border = "0";
       };
 
@@ -33,9 +42,9 @@
         anchor = "center";
         padding = "0";
         border = "1px";
-        border-color = "@border-col";
+        border-color = mkLiteral "@border-col";
         border-radius = "10px";
-        background-color = "@bg-col";
+        background-color = mkLiteral "@bg-col";
       };
 
       "mainbox" = {
@@ -45,46 +54,47 @@
       };
 
       "inputbar" = {
-        background-color = "rgba(20, 20, 20, 0.85)";
+        # rgba тоже нужно оборачивать
+        background-color = mkLiteral "rgba(20, 20, 20, 0.85)";
         border-radius = "10px";
         padding = "15px 20px";
         children = [ "prompt" "entry" ];
         border = "1px";
-        border-color = "rgba(255, 255, 255, 0.1)";
+        border-color = mkLiteral "rgba(255, 255, 255, 0.1)";
       };
 
       "prompt" = {
         enabled = true;
         padding = "0 10px 0 0";
-        text-color = "@fg-col";
+        text-color = mkLiteral "@fg-col";
       };
 
       "entry" = {
-        text-color = "@fg-col";
+        text-color = mkLiteral "@fg-col";
         placeholder = "Введи команду...";
-        placeholder-color = "@base03";
+        placeholder-color = mkLiteral "@base03";
       };
 
       "listview" = {
-        background-color = "rgba(20, 20, 20, 0.95)";
+        background-color = mkLiteral "rgba(20, 20, 20, 0.95)";
         border-radius = "10px";
         padding = "10px";
         lines = 5;
         columns = 1;
         border = "1px";
-        border-color = "rgba(255, 255, 255, 0.1)";
+        border-color = mkLiteral "rgba(255, 255, 255, 0.1)";
       };
 
       "element" = {
         padding = "8px 15px";
         border-radius = "5px";
         background-color = "transparent";
-        text-color = "@fg-col";
+        text-color = mkLiteral "@fg-col";
       };
 
       "element selected" = {
-        background-color = "@selected-col";
-        text-color = "@fg-col2";
+        background-color = mkLiteral "@selected-col";
+        text-color = mkLiteral "@fg-col2";
       };
     };
   };

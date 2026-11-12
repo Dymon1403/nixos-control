@@ -8,7 +8,7 @@
     ./git.nix
     ./dunst.nix
     ./shell.nix
-
+    ./rofi.nix
   ];
 
 

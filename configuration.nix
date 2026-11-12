@@ -386,7 +386,7 @@
 
   stylix.enable = true;
 
-  stylix.image = ./assets/2.jpg;
+  stylix.image = ./assets/7.png;
 
   stylix.polarity = "dark";
 
