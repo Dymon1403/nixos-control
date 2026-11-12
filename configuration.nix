@@ -188,7 +188,7 @@
   # --------------------------------------------
  
   fonts.fontconfig.defaultFonts = {
-    monospace = ["Cozette"];
+    monospace = ["JetBrainsMono Nerd Font"];
   };
 
   # ============================================
@@ -258,7 +258,6 @@
     material-design-icons
     font-awesome
     nerd-fonts.jetbrains-mono
-    cozette
   ];
 
   fonts.fontconfig.allowBitmaps = true;
@@ -381,6 +380,22 @@
   };
 
   
+  # ============================================
+  # Stylix
+  # ============================================
+
+  stylix.enable = true;
+
+  stylix.image = ./assets/11.png;
+
+  stylix.polarity = "dark";
+
+  stylix.fonts.monospace = {
+    package = pkgs.nerd-fonts.jetbrains-mono;
+    name = "JetBrainsMono Nerd Font";
+  };
+
+
   # ============================================
   # NixOS version
   # ============================================
