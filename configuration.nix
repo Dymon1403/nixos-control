@@ -386,7 +386,7 @@
 
   stylix.enable = true;
 
-  stylix.image = ./assets/7.png;
+  stylix.image = ./assets/1.jpg;
 
   stylix.polarity = "dark";
 
@@ -394,6 +394,12 @@
     package = pkgs.nerd-fonts.jetbrains-mono;
     name = "JetBrainsMono Nerd Font";
   };
+
+  programs.localsend = {
+    enable = true;
+    openFirewall = true;
+  };
+
 
   # ============================================
   # NixOS version

@@ -31,6 +31,12 @@
 
   };
 
+  stylix.targets.firefox = {
+    enable = true;
+    profileNames = [ "6ix" ]; 
+  };
+
+
 
   home.username = "dmitrj";
   home.homeDirectory = "/home/dmitrj";
