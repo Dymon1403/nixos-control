@@ -33,5 +33,34 @@
     enableBashIntegration = true;
   };
 
+  
+
+  programs.alacritty = {
+    enable = true;
+
+    settings = {
+      window = {
+        padding = { x = 10; y = 10; };
+        opacity = 1.0; # Прозрачность (нужен композитор, например Hyprland)
+      };
+
+      font = {
+        normal = {
+          family = "JetBrainsMono Nerd Font";
+          style = "Regular";
+        };
+      };
+
+    };
+  };
+
+
+
+
+
+
+
+
+
 
 }

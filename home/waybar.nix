@@ -86,7 +86,6 @@
 
       #mpris, #workspaces, #clock, #tray, #cpu, #memory, #temperature {
           font-family: "JetBrainsMono Nerd Font";
-          /* Фон берем из Stylix, делаем его полупрозрачным через rgba */
           background: alpha(@base00, 0.7); 
           color: @base05; /* Основной текст */
           border: 2px solid @base0D; /* Акцентный цвет для рамки */
