@@ -18,6 +18,7 @@
     wl-clipboard
     zathura 
     alacritty 
+    fastfetch
 
     # ============================================
     # System / CLI
