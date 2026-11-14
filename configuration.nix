@@ -72,6 +72,7 @@
             ss = "sudo nixos-rebuild switch --flake .#thinkpad$";
             # sleep = "python3 sleep.py";
             # docker = "python3 docker.py";
+            pushall = "git push origin main && git push forgejo main";
 
             };
 
