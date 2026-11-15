@@ -20,8 +20,8 @@
 
   home.file = {
 
-    ".local/bin/w".source = ../scripts/wal.py;
-    ".local/bin/w".executable = true;
+    ".local/bin/wal".source = ../scripts/wal.py;
+    ".local/bin/wal".executable = true;
 
     ".local/bin/s".source = ../scripts/sleep.py;
     ".local/bin/s".executable = true;
