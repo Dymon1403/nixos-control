@@ -13,18 +13,18 @@
 
 
   home.packages = [
-    (pkgs.writeShellScriptBin "wake" ''
+    (pkgs.writeShellScriptBin "w" ''
       exec ${pkgs.python3}/bin/python3 ${../scripts/wake.py} "$@"
     '')
   ];
 
   home.file = {
 
-    ".local/bin/wal".source = ../scripts/wal.py;
-    ".local/bin/wal".executable = true;
+    ".local/bin/w".source = ../scripts/wal.py;
+    ".local/bin/w".executable = true;
 
-    ".local/bin/sleep".source = ../scripts/sleep.py;
-    ".local/bin/sleep".executable = true;
+    ".local/bin/s".source = ../scripts/sleep.py;
+    ".local/bin/s".executable = true;
 
     ".local/bin/docker".source = ../scripts/docker.py;
     ".local/bin/docker".executable = true;
