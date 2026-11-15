@@ -19,7 +19,7 @@ for server in servers:
     else:
         print(f"{result.stderr}")
 
-print("=======================================================================")
+print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 for server in servers:
     print(f"Waking up {server['name']} ({server['ip']})...")
