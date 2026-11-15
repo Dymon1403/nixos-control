@@ -19,7 +19,9 @@ for server in servers:
     else:
         print(f"{result.stderr}")
 
+print("")
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+print("")
 
 for server in servers:
     print(f" Ping {server['name']} ({server['ip']})...")
@@ -37,16 +39,17 @@ for server in servers:
         print(f"[{server['name']}]: ERROR")
 
 
+print("")
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+print("")
 
 for server in servers:
-    print(f"Checking Uptime {server['name']} ({server['ip']})...")
 
+    print(f"Checking Uptime {server['name']} ({server['ip']})...")
     time_cmd = f"ssh {server['user']}@{server['ip']} 'uptime'"
     result = subprocess.run(time_cmd, shell=True, capture_output=True, text=True)
-
-                print(f"[{server['name']}]: Uptime {result}")
+    print(f"[{server['name']}]: Uptime {result.stdout}")
+    
     else:
         print(f"[{server['name']}]: ERROR")
-
 
