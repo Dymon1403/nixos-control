@@ -49,7 +49,3 @@ for server in servers:
     time_cmd = f"ssh {server['user']}@{server['ip']} 'uptime'"
     result = subprocess.run(time_cmd, shell=True, capture_output=True, text=True)
     print(f"[{server['name']}]: Uptime {result.stdout}")
-    
-    else:
-        print(f"[{server['name']}]: ERROR")
-
