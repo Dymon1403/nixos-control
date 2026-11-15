@@ -22,7 +22,7 @@ for server in servers:
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 for server in servers:
-    print(f"Waking up {server['name']} ({server['ip']})...")
+    print(f" Ping {server['name']} ({server['ip']})...")
 
     ping_cmd = f"ssh {server['user']}@{server['ip']} 'pingu -c 1 google.com'"
     result = subprocess.run(ping_cmd, shell=True, capture_output=True, text=True)
@@ -40,16 +40,16 @@ for server in servers:
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 for server in servers:
-    print(f"Waking up {server['name']} ({server['ip']})...")
+    print(f"Checking Uptime {server['name']} ({server['ip']})...")
 
-    ping_cmd = f"ssh {server['user']}@{server['ip']} 'uptime'"
-    result = subprocess.run(ping_cmd, shell=True, capture_output=True, text=True)
+    time_cmd = f"ssh {server['user']}@{server['ip']} 'uptime'"
+    result = subprocess.run(time_cmd, shell=True, capture_output=True, text=True)
 
     if result.returncode == 0:
         for line in result.stdout.splitlines():
             if "time=" in line:
                 time_str = line.split("time=")[1].strip()
-                print(f"[{server['name']}]: Ping {time_str}")
+                print(f"[{server['name']}]: Uptime {time_str}")
                 break
     else:
         print(f"[{server['name']}]: ERROR")
