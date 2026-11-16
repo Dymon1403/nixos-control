@@ -19,6 +19,7 @@
     zathura 
     alacritty 
     fastfetch
+    kazam
 
     # ============================================
     # System / CLI
@@ -66,7 +67,8 @@
     # ============================================
     # Apps / Web
     # ============================================
-
+    
+    tor
     firefox
     telegram-desktop
     discord
