@@ -68,7 +68,7 @@
     # Apps / Web
     # ============================================
     
-    tor
+    tor-browser
     firefox
     telegram-desktop
     discord
