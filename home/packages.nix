@@ -7,7 +7,6 @@
     # Desktop / Wayland
     # ============================================
 
-    tftp-hpa
     tcpdump
 
     waybar
