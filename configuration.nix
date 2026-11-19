@@ -403,6 +403,10 @@
     openFirewall = true;
   };
 
+  services.atftpd = {
+    enable = true;
+    root = "/srv/tftp";
+  };
 
   # ============================================
   # NixOS version

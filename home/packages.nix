@@ -7,6 +7,9 @@
     # Desktop / Wayland
     # ============================================
 
+    tftp-hpa
+    tcpdump
+
     waybar
     awww
     waypaper
