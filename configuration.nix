@@ -277,21 +277,10 @@
 
   services.zapret = {
     enable = true;
-    #whitelist = [
-     # "rutracker.org"
-     #  "youtube.com"
-     # "discord.com"
-     # "discord.gg"
-     # "discordapp.com"
-     # "discordapp.net"
-     # "ciscobinary.openh264.org"
-
-    #];
     blacklist = [
        "github.com"
        "vk.ru"
        "deepseek.com"
-
 
     ];
     configureFirewall = true;
