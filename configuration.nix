@@ -10,6 +10,8 @@
 
   boot.supportedFilesystems = [ "exfat" ];
 
+  boot.loader.systemd-boot.configurationLimit = 5;
+
   # ============================================
   # Network
   # ============================================
@@ -283,7 +285,7 @@
        "deepseek.com"
 
     ];
-    configureFirewall = true;
+    configureFirewall = false;
     params = [
        "--dpi-desync=fake,fakedsplit"
        "--dpi-desync-fooling=badseq"
@@ -394,6 +396,13 @@
 
   networking.firewall.enable = false;
 
+  
+  # ============================================
+  # nfttables
+  # ============================================
+
+  networking.nftables.enable = true;
+  
   # ============================================
   # NixOS version
   # ============================================
