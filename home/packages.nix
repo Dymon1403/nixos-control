@@ -7,8 +7,6 @@
     # Desktop / Wayland
     # ============================================
 
-    tcpdump
-
     waybar
     awww
     waypaper
@@ -32,6 +30,7 @@
     fd
     ripgrep
     curl
+    tcpdump
     wget
     unzip
     tailscale
