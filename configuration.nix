@@ -8,7 +8,18 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+
+  
+  # ============================================
+  # ExFat
+  # ============================================
+
   boot.supportedFilesystems = [ "exfat" ];
+
+  
+  # ============================================
+  # Limit Sysbuilds
+  # ============================================
 
   boot.loader.systemd-boot.configurationLimit = 5;
 
@@ -372,7 +383,6 @@
       ];
     };
   };
-
   
   # ============================================
   # Stylix
@@ -388,15 +398,22 @@
     package = pkgs.nerd-fonts.jetbrains-mono;
     name = "JetBrainsMono Nerd Font";
   };
+   
+  # ============================================
+  # Localsend Firewall Disabled
+  # ============================================
 
   programs.localsend = {
     enable = true;
     openFirewall = true;
   };
+    
+  # ============================================
+  # Firewall Disabled
+  # ============================================
 
   networking.firewall.enable = false;
 
-  
   # ============================================
   # nfttables
   # ============================================
