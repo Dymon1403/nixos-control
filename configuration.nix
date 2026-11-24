@@ -7,15 +7,12 @@
   
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
-
   
   # ============================================
   # ExFat
   # ============================================
 
   boot.supportedFilesystems = [ "exfat" ];
-
   
   # ============================================
   # Limit Sysbuilds
@@ -87,7 +84,7 @@
             ss = "sudo nixos-rebuild switch --flake .#thinkpad$";
             # sleep = "python3 sleep.py";
             # docker = "python3 docker.py";
-            pushall = "git push origin master && git push forgejo master";
+            pushall = "git push origin main && git push forgejo master";
 
             };
 
