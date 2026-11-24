@@ -8,7 +8,7 @@ servers = [
 
 for server in servers:
     print(f"stoped container on: {server['name']} ({server['ip']})...")
-    command = ["ssh", f"{server['user']}@{server['ip']}", "docker stop $(docker ps -q) 2>/dev/null || true"]
+    command = ["ssh", f"{server['user']}@{server['ip']}", "docker stop $(docker ps -q) 2>/dev/null || true && docker compose up transmission"]
     result = subprocess.run(command, capture_output=True, text=True)
     
     if result.returncode == 0:
