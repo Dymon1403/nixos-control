@@ -7,12 +7,15 @@
   
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
+
   
   # ============================================
   # ExFat
   # ============================================
 
   boot.supportedFilesystems = [ "exfat" ];
+
   
   # ============================================
   # Limit Sysbuilds
