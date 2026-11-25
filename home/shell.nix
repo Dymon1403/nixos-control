@@ -8,6 +8,7 @@
      
       home = "ssh server@192.168.0.228";
       ss = "sudo nixos-rebuild switch --flake .#thinkpad";
+      dop = "ssh server@192.168.0.109";
 
     };
 
@@ -41,7 +42,7 @@
     settings = {
       window = {
         padding = { x = 10; y = 10; };
-        opacity = 1.0; # Прозрачность (нужен композитор, например Hyprland)
+        opacity = 1.0;
       };
 
       font = {
