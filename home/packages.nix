@@ -20,7 +20,6 @@
     alacritty 
     fastfetch
     kazam
-    pnpm
 
     # ============================================
     # System / CLI
